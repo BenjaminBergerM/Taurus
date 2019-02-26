@@ -491,7 +491,7 @@ a:hover, a:focus, a:active {
   .probootstrap-hero {
     height: inherit;
     padding: 7em 0 15em 0;
-    background-position-x: 50%!important;
+    background-position: 50% 90% !important;
   }
 }
 
