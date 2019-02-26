@@ -5,7 +5,7 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     Swal.fire(
         'Enviado correctamente!',
-        'Gracias por escribirnos, nos pondremos en contacto con el la brevedad!',
+        'Gracias por escribirnos, nos pondremos en contacto a brevedad!',
         'success'
     )
     let formData = new FormData(form);
