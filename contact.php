@@ -16,17 +16,17 @@ try {
     //Server settings
     // $mail->SMTPDebyyug = 2;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'plesk.ar.conectemos.com';  // Specify main and backup SMTP servers
+    $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'taurus@makeitsmart.com.ar';                 // SMTP username
-    $mail->Password = 'J3ox4u%4';                           // SMTP password
+    $mail->Username = 'benja@makeitsmart.com.ar';                 // SMTP username
+    $mail->Password = 'MakeItSmart@Benjamin.00';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 587;                                    // TCP port to connect to
     //Recipients
-    $mail->setFrom('taurus@makeitsmart.com.ar', 'Make It Smart');
-    $mail->addAddress('ventas@taurusagricola.com.ar', 'Angle Rivero');     // Add a recipient
-    $mail->addReplyTo('contacto@makeitsmart.com.ar', 'Make It Smart | Contacto');
-    $mail->addBCC('taurus@makeitsmart.com.ar');
+    $mail->setFrom('benja@makeitsmart.com.ar', 'Make It Smart');
+    // $mail->addAddress('ventas@taurusagricola.com.ar', 'Angle Rivero');     // Add a recipient
+    $mail->addReplyTo('benja@makeitsmart.com.ar', 'Make It Smart | Contacto');
+    $mail->addAddress('benja@makeitsmart.com.ar');
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
