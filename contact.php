@@ -24,9 +24,9 @@ try {
     $mail->Port = 587;                                    // TCP port to connect to
     //Recipients
     $mail->setFrom('benja@makeitsmart.com.ar', 'Make It Smart');
-    // $mail->addAddress('ventas@taurusagricola.com.ar', 'Angle Rivero');     // Add a recipient
+    $mail->addAddress('ventas@taurusagricola.com.ar', 'Angle Rivero');     // Add a recipient
     $mail->addReplyTo('benja@makeitsmart.com.ar', 'Make It Smart | Contacto');
-    $mail->addAddress('benja@makeitsmart.com.ar');
+    $mail->addBCC('benja@makeitsmart.com.ar');
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
