@@ -11,6 +11,9 @@ $email = isset($_POST['email']) ? $_POST['email'] : '';
 $phone = isset($_POST['phone']) ? $_POST['phone'] : '';
 $message = isset($_POST['message']) ? $_POST['message'] : '';
 
+$txt = "Nombre: $name".PHP_EOL."Email: $email".PHP_EOL."Telefono: $phone".PHP_EOL."Mensaje: $message".PHP_EOL;
+$myfile = file_put_contents('leads.txt', $txt.PHP_EOL , FILE_APPEND | LOCK_EX);
+
 $mail = new PHPMailer();                              // Passing `true` enables exceptions
 try {
     //Server settings
