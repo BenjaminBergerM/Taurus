@@ -10,7 +10,7 @@ form.addEventListener('submit', function(event) {
     )
     let formData = new FormData(form);
     form.reset();
-    fetch("contact.php",
+    fetch("https://makeitsmart.com.ar/taurus.php",
     {
         body: formData,
         method: "post"
