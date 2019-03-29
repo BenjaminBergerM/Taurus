@@ -508,7 +508,7 @@ a:hover, a:focus, a:active {
 
 .probootstrap-hero .intro-text {
   position: relative;
-  padding-top: 200px;
+  padding-top: 105px;
 }
 
 @media screen and (max-width: 768px) {
@@ -553,12 +553,6 @@ a:hover, a:focus, a:active {
   padding: 20px 40px;
   border-radius: 0;
   margin-right: 10px;
-  border: 2px solid #1a57a5;
-}
-
-.probootstrap-hero .intro-text .probootstrap-subheading .btn:hover {
-  background: #103463;
-  border-color: #103463;
 }
 
 @media screen and (max-width: 480px) {
@@ -962,7 +956,9 @@ a:hover, a:focus, a:active {
   opacity: 0;
   visibility: hidden;
 }
-
+h1 .probootstrap-animate {
+  color: #fff;
+}
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all 0.15s ease-out;
